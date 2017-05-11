@@ -1,0 +1,5 @@
+#cleaning script
+clean
+
+#compiled python files
+*.pyc
