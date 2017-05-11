@@ -1,4 +1,4 @@
-#cleaning script
+#clean *.pyc script
 clean
 
 #compiled python files
