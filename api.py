@@ -1,5 +1,6 @@
 import requests
 import json
+from apiKey import getOpenWeatherMapAPI
 
 def getWeatherData():
     #get geolocation
@@ -12,6 +13,7 @@ def getWeatherData():
     #get local weather based on latitude and longitude
     weather = requests.get("http://api.openweathermap.org/data/2.5/weather?lat="
             + str(lat) + "&lon="+ str(lon) 
-            + "&appid=66a8e5b59568e93c8e6093c555a48950").json()
+            + "&appid="
+            + getOpenWeatherMapAPI()).json()
 
     return weather
