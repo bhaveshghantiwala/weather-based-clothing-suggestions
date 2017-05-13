@@ -20,12 +20,10 @@ if __name__=="__main__":
 
     normWeatherData = normalizedWeatherData(currTemp, currWindSpeed, currWeatherCond)
 
-    suggestedClothes = suggClothes(normWeatherData)
     print "--------------------------------------------------------------------------"
     print "Hello! The current temperature is " + str(currTemp) + u"\u00b0" + "F."
     #print "The weather condition is "+ "."
     print ""
     print "Your suggested clothing:"
-    for i in suggestedClothes:
-        print i
+    suggClothes(normWeatherData)
     print "Have a nice day!"

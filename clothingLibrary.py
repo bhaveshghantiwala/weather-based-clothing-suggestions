@@ -43,7 +43,9 @@ lowerBodyLib = (
 lowerBodyLib = sorted(lowerBodyLib, key=lambda x: x.tempRating)
 
 #whole body
-wholeBodyLib = ()
+wholeBodyLib = (
+        wholeBody('Sundress', tempScaleSet(80), 0, 0),
+        )
 
 #footwear
 footwearLib = (
@@ -56,7 +58,9 @@ footwearLib = (
 footwearLib = sorted(footwearLib, key=lambda x: x.tempRating)
 
 #headwear
-headwearLib = ()
+headwearLib = (
+        headwear('Baseball Cap', tempScaleSet(80), 2, 0),
+        )
 
 #outerwear
 outerwearLib = (
